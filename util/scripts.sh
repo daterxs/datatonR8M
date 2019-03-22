@@ -11,7 +11,10 @@ cat  ~/git/data_9m_twitter/data/tweets_all.jsonl | wc -l
 # 1674296 20 segundos en ejecucion
 
 # Niv magic trick to convert jsonl to csv
-cat tweets_8m.jsonl | jq -M '. as $in 
+cat tweets_all.jsonl | jq -M '. as $in 
 | reduce leaf_paths as $path ({};
      . + { ($path | map(tostring) | join(".")): $in | getpath($path) }) | to_entries | map(.key), map(.value) | @csv' | sed s/'\\\"'/'"'/g > tweets_8m.csv
 
+
+
+select( .<key> | contains("<value>")
