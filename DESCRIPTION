@@ -25,7 +25,8 @@ Imports: futile.logger,
          quanteda,
          testthat
 Collate:
+  'dataton-lib.R'
   'json-lib.R'
   'twitter-lib.R'
-BugReports: https://github.com/kenarab/twitterAnalytics/issues
-URL: https://github.com/kenarab/twitterAnalytics/Rpolyhedra
+BugReports: https://github.com/kenarab/datatonR8M/issues
+URL: https://github.com/kenarab/datatonR8M
