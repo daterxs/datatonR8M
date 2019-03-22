@@ -1,0 +1,31 @@
+Package: datatonR8M
+Type: Package
+Title: datatonR8M
+Version: 0.1.0
+Authors@R: c(
+    person("Alejandro", "Baranek",,"abaranek@dc.uba.ar", c("aut","com","cre", "cph"))
+    )
+Maintainer: Alejandro Baranek <abaranek@dc.uba.ar>
+Description: Analysis of 8M tweets
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown,
+    covr
+VignetteBuilder: knitr
+Depends: R (>= 3.4)
+Imports: futile.logger,
+         dplyr,
+         tibble,
+         reshape2,
+         readr,
+         R6,
+         text2vec,
+         quanteda,
+         testthat
+Collate:
+  'json-lib.R'
+  'twitter-lib.R'
+BugReports: https://github.com/kenarab/twitterAnalytics/issues
+URL: https://github.com/kenarab/twitterAnalytics/Rpolyhedra
